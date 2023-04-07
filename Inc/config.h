@@ -68,10 +68,10 @@
 #define CONTROL_PWM                 // use RC PWM as input. disable DEBUG_SERIAL_USART2!
 #define PWM_DEADBAND 0            // How much of the center position is considered 'center' (100 = values -100 to 100 are considered 0)
 // Min / Max values of each channel (use DEBUG to determine these values)
-#define PWM_CH1_MAX 50            // (0 - 1000)
-#define PWM_CH1_MIN -50           // (-1000 - 0)
-#define PWM_CH2_MAX 50             // (0 - 1000)
-#define PWM_CH2_MIN -50            // (-1000 - 0)
+#define PWM_CH1_MAX 60            // (0 - 1000)
+#define PWM_CH1_MIN -60           // (-1000 - 0)
+#define PWM_CH2_MAX 60             // (0 - 1000)
+#define PWM_CH2_MIN -60            // (-1000 - 0)
 
 
 
@@ -102,8 +102,8 @@
 // - weakr and weakl: field weakening for extra boost at high speed (speedR > 700 and speedL > 700). 0 to ~400
 
 #define FILTER              0.1  // lower value == softer filter. do not use values <0.01, you will get float precision issues.
-#define SPEED_COEFFICIENT   .5  // higher value == stronger. 0.0 to ~2.0?
-#define STEER_COEFFICIENT   0.2  // higher value == stronger. if you do not want any steering, set it to 0.0; 0.0 to 1.0
+#define SPEED_COEFFICIENT   .1  // higher value == stronger. 0.0 to ~2.0?
+#define STEER_COEFFICIENT   0.1  // higher value == stronger. if you do not want any steering, set it to 0.0; 0.0 to 1.0
 #define INVERT_R_DIRECTION
 #define INVERT_L_DIRECTION
 #define BEEPS_BACKWARD 0    // 0 or 1
