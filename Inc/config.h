@@ -68,10 +68,10 @@
 #define CONTROL_PWM                 // use RC PWM as input. disable DEBUG_SERIAL_USART2!
 #define PWM_DEADBAND 0            // How much of the center position is considered 'center' (100 = values -100 to 100 are considered 0)
 // Min / Max values of each channel (use DEBUG to determine these values)
-#define PWM_CH1_MAX 60            // (0 - 1000)
-#define PWM_CH1_MIN -60           // (-1000 - 0)
-#define PWM_CH2_MAX 60             // (0 - 1000)
-#define PWM_CH2_MIN -60            // (-1000 - 0)
+#define PWM_CH1_MAX 50            // (0 - 1000)
+#define PWM_CH1_MIN -50           // (-1000 - 0)
+#define PWM_CH2_MAX 50             // (0 - 1000)
+#define PWM_CH2_MIN -50            // (-1000 - 0)
 
 
 
@@ -107,7 +107,7 @@
 #define INVERT_R_DIRECTION
 #define INVERT_L_DIRECTION
 #define BEEPS_BACKWARD 0    // 0 or 1
-#define BRAKE_FILTER        0.01f // Replaces FILTER while braking
+#define BRAKE_FILTER        0.05f // Replaces FILTER while braking
 #define KIDDIE_MODE_REDUCTION 0.5f  // Reduce max speed and acceleration based on switch 
 
 #define ADDITIONAL_CODE
